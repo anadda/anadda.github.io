@@ -10,3 +10,23 @@
 section {
   padding-top: 5rem;
 }
+
+small {
+  position: static;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    text-transform: uppercase;
+  }
+
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #fff;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+}
